@@ -1,11 +1,11 @@
 SampleApp::Application.routes.draw do
-  match '/contact', :to => 'pages#contact'
-  match '/about', :to => 'pages#about'
-  match '/help', :to => 'pages#help'
+  get "users/new"
 
- 
-  # You can have the root of your site routed with "root"
-  # just remember to delete public/index.html.
+  match '/contact', :to => 'pages#contact'
+  match '/about',   :to => 'pages#about'
+  match '/help',    :to => 'pages#help'
+  match '/signup',  :to => 'users#new'
+
   root :to => 'pages#home'
  
   # The priority is based upon order of creation:
