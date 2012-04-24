@@ -24,8 +24,6 @@ group :test do
 	gem 'factory_girl_rails', '1.0'
 end
 
-$ cat Gemfile
-...
 group :production do
   # gems specifically for Heroku go here
   gem "pg"
