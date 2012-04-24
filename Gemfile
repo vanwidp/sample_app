@@ -13,10 +13,6 @@ group :development do
 	gem 'annotate', :git => 'git://github.com/ctran/annotate_models.git'
 end
 
-group :production do
-  gem 'pg'
-end
-
 group :test do
 	gem 'rspec-rails', '2.6.1'
 	gem 'webrat', '0.7.1'
